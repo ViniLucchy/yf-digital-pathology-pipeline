@@ -1,0 +1,17 @@
+name: yf-pathology
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.13
+  - pytorch=2.6.0
+  - torchvision
+  - torchaudio
+  - cudatoolkit=12.8
+  - pip
+  - pip:
+    - lazyslide
+    - slideflow
+    - monai==1.4.*
+    - nnunetv2
+    - huggingface-hub
