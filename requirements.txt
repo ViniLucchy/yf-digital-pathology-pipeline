@@ -1,0 +1,11 @@
+lazyslide>=0.3.0
+slideflow>=2.0.0
+monai==1.4.*
+nnunetv2
+torch==2.6.0+cu128
+torchvision==0.21.0+cu128
+torchaudio==2.6.0+cu128
+huggingface-hub
+timm
+scyjava
+cucim
