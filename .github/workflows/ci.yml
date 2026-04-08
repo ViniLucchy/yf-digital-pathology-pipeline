@@ -1,0 +1,17 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docker image
+        run: docker compose build --no-cache
+      - name: Test container
+        run: docker compose run --rm pipeline python -c "import lazyslide, slideflow, monai; print('Pipeline OK')"
