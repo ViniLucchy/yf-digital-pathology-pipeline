@@ -1,31 +1,30 @@
-# Whole Slide Images (nunca commitar!)
+# Ambientes Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dados grandes - NUNCA commitar
+data/
+outputs/
+models/
 *.svs
 *.ndpi
 *.mrxs
 *.tif
 *.tiff
-*.bif
-*.scn
+*.png
+*.jpg
+*.jpeg
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb.log
 
-# Data e outputs grandes
-data/
-outputs/
-notebooks/.ipynb_checkpoints/
-
-# IDE
+# Outros
+.DS_Store
 .vscode/
 .idea/
-*.swp
-*.swo
